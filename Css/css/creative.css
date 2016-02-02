@@ -474,3 +474,15 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+.test{
+    padding-top: 30px;
+    padding-left: 25px
+}
+.alignRight{
+    padding-right: 25px;
+    float: right;
+}
+.btn-bleu{
+    background-color: #337ab7;  
+    color: #fff;
+}
