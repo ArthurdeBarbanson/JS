@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: lp
- * Date: 02/02/2016
- * Time: 16:48
- */
 class Photo
 {
     private $id;
