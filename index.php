@@ -18,7 +18,7 @@ if (!isset($_REQUEST['uc'])) {
 // Application de la méthode MVC
     switch ($uc) {
         case 'Acceuil': {
-            include("Vue/v_acceuil.html");
+            include("Vue/v_Acceuil.html");
             break;
         }
 
