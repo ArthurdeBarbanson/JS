@@ -7,6 +7,3 @@
     </div>
 </div>
 
-<div>
-    <p>test github comf</p>
-</div>
