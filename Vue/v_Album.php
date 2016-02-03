@@ -8,5 +8,5 @@
 </div>
 
 <div>
-    <p>test git</p>
+    <p>test github comf</p>
 </div>
