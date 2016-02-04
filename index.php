@@ -18,20 +18,18 @@ if (!isset($_REQUEST['uc'])) {
 // Application de la méthode MVC
     switch ($uc) {
         case 'Acceuil': {
-            include("Vue/v_acceuil.html");
+            include("Vue/v_Acceuil.html");
             break;
         }
 
         case $uc : {
             
-            //Chaque page aura la même entete
+            //Chaque page aura la même entete et menu
                 include("Vue/design/v_entete.php");
-            //Chauqe page aura le même menu
                 include("Vue/design/v_menu.php");
-                
-            if ($uc != 'Acceuil') {
-                include("controleur/c_" . $uc .".php");
-            }
+
+                include("Controleur/c_" . $uc .".php");
+
             //Appel du pied ed page
                 include("Vue/design/v_piedpage.php");
             break;
