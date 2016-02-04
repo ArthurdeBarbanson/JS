@@ -4,15 +4,19 @@
 session_start();
 
 //PdoPrelem est le modèle permettant la liaison avec la base de donné
-// require_once "modele/PdoPicasa.php";
+require_once "Modele/PdoPicasa.php";
+require_once "Class/User.php";
+
 
 
 // Condition pour appel de la page d'acceuil vers l'intranet
 if (!isset($_REQUEST['uc'])) {
     $uc = 'Acceuil';
 } else {
+    $newUser=$_SESSION['user'];
+    $User = new User($newUser[0],$newUser[2],$newUser[1],$newUser[3]);
     $uc = $_REQUEST['uc'];
-    //$connexion = new PdoPicasa();
+    $connexion = new PdoPicasa();
 }
 
 // Application de la méthode MVC

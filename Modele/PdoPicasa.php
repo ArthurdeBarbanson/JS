@@ -25,5 +25,13 @@ class PdoPicasa {
     public function __destruct() {
         $this->monPdo = null;
     }
+    
+    public function getUser()
+    {
+        $req = "SELECT * FROM `user`";
+        $res = $this->monPdo->query($req);
+        $liste = $res->fetchall();
+        return $liste;
+    }
 
 }

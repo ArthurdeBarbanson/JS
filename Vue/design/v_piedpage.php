@@ -6,7 +6,7 @@
 
     </div>
     <!-- /#wrapper -->
-
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
