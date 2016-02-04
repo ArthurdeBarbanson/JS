@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" href="../../Css/img/Uiconstock-Socialmedia-Picasa.ico" />
-
+    <link rel="stylesheet" href="../../Css/css/carousel.css" type="text/css">
 
     <title>Picasa 2.0</title>
 

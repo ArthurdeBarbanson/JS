@@ -8,57 +8,43 @@
 </div>
 
 
-
-<!-- /.row -->
-
-<div class="row">
-    <div class="col-lg-6 col-md-12">
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <i class="fa fa-comments fa-5x"></i>
-                    </div>
-                    <div class="col-xs-9 text-right">
-                        <div class="huge">$26$</div>
-                        <div>Nouveau Like</div>
-                    </div>
-                </div>
-            </div>
-            <a href="#">
-                <div class="panel-footer">
-                    <span class="pull-left">Voir Détails</span>
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                    <div class="clearfix"></div>
-                </div>
-            </a>
+<div id="carousel" style=" position: relative;margin: 0 auto;top: 0px;left: 0px; width: 809px;height: 150px;overflow: hidden;visibility: hidden;">
+    <!-- Slider -->
+    <div class="slide" data-u="slides">
+        <div style="display: none;">
+            <img data-u="image" src="../Data/Image1.jpg" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="../Data/Image2.jpg" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="../Data/Image3.jpg" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="../Data/Image4.jpg" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="../Data/Image5.jpg" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="../Data/Image6.jpg" />
+        </div>
+        <div style="display: none;">
+            <img data-u="image" src="../Data/Image7.jpg" />
         </div>
     </div>
-
-    <div class="col-lg-6 col-md-12">
-        <div class="panel panel-red">
-            <div class="panel-heading">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <i class="fa fa-support fa-5x"></i>
-                    </div>
-                    <div class="col-xs-9 text-right">
-                        <div class="huge">$1$</div>
-                        <div>Amis!</div>
-                    </div>
-                </div>
-            </div>
-            <a href="#">
-                <div class="panel-footer">
-                    <span class="pull-left"> Voir Détail</span>
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                    <div class="clearfix"></div>
-                </div>
-            </a>
+    <!-- Bullet Navigator -->
+    <div data-u="navigator" class="jssorb03">
+        <!-- bullet navigator item prototype -->
+        <div data-u="prototype">
+            <div data-u="numbertemplate"></div>
         </div>
     </div>
+    <!-- Arrow Navigator -->
+    <span data-u="arrowleft" class="jssora03l" data-autocenter="2"></span>
+    <span data-u="arrowright" class="jssora03r"  data-autocenter="2"></span>
 </div>
-<!-- /.row -->
 
-              
+
+
 
