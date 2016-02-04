@@ -12,25 +12,25 @@
     <!-- Slider -->
     <div class="slide" data-u="slides">
         <div style="display: none;">
-            <img data-u="image" src="../Data/Image1.jpg" />
+            <img data-u="image" src="Data/Image1.jpg" alt="lol" />
         </div>
         <div style="display: none;">
-            <img data-u="image" src="../Data/Image2.jpg" />
+            <img data-u="image" src="Data/Image2.jpg" />
         </div>
         <div style="display: none;">
-            <img data-u="image" src="../Data/Image3.jpg" />
+            <img data-u="image" src="Data/Image3.jpg" />
         </div>
         <div style="display: none;">
-            <img data-u="image" src="../Data/Image4.jpg" />
+            <img data-u="image" src="Data/Image4.jpg" />
         </div>
         <div style="display: none;">
-            <img data-u="image" src="../Data/Image5.jpg" />
+            <img data-u="image" src="Data/Image5.jpg" />
         </div>
         <div style="display: none;">
-            <img data-u="image" src="../Data/Image6.jpg" />
+            <img data-u="image" src="Data/Image6.jpg" />
         </div>
         <div style="display: none;">
-            <img data-u="image" src="../Data/Image7.jpg" />
+            <img data-u="image" src="Data/Image7.jpg" />
         </div>
     </div>
     <!-- Bullet Navigator -->
