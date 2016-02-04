@@ -7,7 +7,10 @@
     </div>
 </div>
 
+<?php
 
+
+?>
 <div id="carousel" style=" position: relative;margin: 0 auto;top: 0px;left: 0px; width: 809px;height: 150px;overflow: hidden;visibility: hidden;">
     <!-- Slider -->
     <div class="slide" data-u="slides">
