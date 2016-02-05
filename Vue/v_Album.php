@@ -126,3 +126,21 @@
 {% } %}
 </script>
 
+<!-- Upload -->
+
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="../../js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="../../js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="../../js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="../../js/jquery.fileupload-image.js"></script>
+
+<!-- The File Upload validation plugin -->
+<script src="../../js/jquery.fileupload-validate.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="../../js/jquery.fileupload-ui.js"></script>
+<!-- The main application script -->
+<script src="../../js/main.js"></script>
+<script src="../../js/app.js"></script>

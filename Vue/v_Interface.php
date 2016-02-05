@@ -48,6 +48,9 @@
     <span data-u="arrowright" class="jssora03r"  data-autocenter="2"></span>
 </div>
 
+<!-- Carousel -->
+<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
 
 
 
