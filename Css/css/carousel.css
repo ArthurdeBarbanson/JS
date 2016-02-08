@@ -90,3 +90,11 @@ span.jssora03r{
 .jssora03l.jssora03ldn { background-position: -243px -33px; }
 .jssora03r.jssora03rdn { background-position: -303px -33px; }
 
+.fancybox-custom .fancybox-skin {
+    box-shadow: 0 0 50px #222;
+}
+
+body {
+    max-width: 700px;
+    margin: 0 auto;
+}

@@ -20,6 +20,7 @@
     <!-- Carousel -->
             <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
             <script type="text/javascript" src="js/carousel.js"></script>
+            <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js"
 
 </body>
 

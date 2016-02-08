@@ -63,6 +63,10 @@ class Photo
         return $this->date;
     }
 
+    public function getPhotoDay(){
+        $ta_photo = lol();
+        return $tab_photo;
+    }
 
 
 
