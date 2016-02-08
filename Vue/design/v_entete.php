@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="Css/css/carousel.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen" />
 
+    <!-- Tchat -->
+    <link rel="stylesheet" type="text/css" href="Css/css/tchat.css" />
+
     <title>Picasa 2.0</title>
 
     <!-- Bootstrap Core CSS -->
