@@ -7,7 +7,7 @@
     </div>
 </div>
 
-<fieldset>
+<fieldset class="wrapper">
     <legend>Un chat en jQuery</legend>
     <div id="conversation"></div><br />
 
