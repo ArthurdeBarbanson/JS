@@ -6,3 +6,19 @@
         </h1>
     </div>
 </div>
+
+<fieldset>
+    <legend>Un chat en jQuery</legend>
+    <div id="conversation"></div><br />
+
+
+    <form action="#" method="post">
+        <div id="nom"> <?php echo $User->getNom() ." ". $User->getPrenom(); ?></div>
+        <input type="text" id="message" size="27">
+        <button type="button" id="envoyer" title="Envoyer"><img src="envoyer.gif"></button>
+    </form>
+</fieldset>
+
+
+
+
