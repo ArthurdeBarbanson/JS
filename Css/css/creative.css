@@ -486,3 +486,16 @@ body {
     background-color: #337ab7;  
     color: #fff;
 }
+
+.btn-info-autocomplation{
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+
+.btn-info-autocomplation:hover{
+    width: 100%;
+    color: white;
+    background-color: black;
+}

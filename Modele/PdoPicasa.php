@@ -5,11 +5,11 @@ class PdoPicasa {
     //Pour les chaines de connexion de type PDO on ne peut pas utiliser de session, pour conserver cette chaîne
     //Il faut conserver les attributs privés en static
 
-    private  $serveur = 'mysql:host=localhost';
-    private  $bdd = 'dbname=picasa';
-    private  $user = 'root';
-    private  $mdp = '';
-    private  $monPdo;
+    private $serveur = 'mysql:host=localhost';
+    private $bdd = 'dbname=picasa';
+    private $user = 'root';
+    private $mdp = '';
+    private $monPdo;
     private static $connexion = null;
 
 //Principe du static 
@@ -25,13 +25,17 @@ class PdoPicasa {
     public function __destruct() {
         $this->monPdo = null;
     }
-    
-    public function getUser()
-    {
+
+    public function getUser() {
         $req = "SELECT * FROM `user`";
         $res = $this->monPdo->query($req);
         $liste = $res->fetchall();
         return $liste;
+    }
+
+    public function ajouterUser($nom,$prenom,$psedo,$mdp) {
+        $insertAdr = "INSERT INTO `user`(`pseudo`, `prenom`, `nom`, `password`) VALUES ('".$psedo."','".$prenom."','".$nom."','".$mdp."');";
+        $this->monPdo->query($insertAdr);
     }
 
 }

@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-lg-12">
         <h1 class="page-header">
-            Acceuil <small>Actualité</small>
+            Accueil <small>Actualité</small>
         </h1>
     </div>
 </div>
