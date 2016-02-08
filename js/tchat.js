@@ -1,7 +1,6 @@
 jQuery(function() {
 
     afficheConversation();
-    setInterval(afficheConversation, 4000);
 
     jQuery('#envoyer').click(function() {
         var nom = jQuery('#nom').text();
@@ -18,4 +17,6 @@ jQuery(function() {
         jQuery('#conversation').load('ac.htm');
 
     }
+
+    setInterval(afficheConversation, 4000);
 });
