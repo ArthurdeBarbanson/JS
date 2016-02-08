@@ -9,7 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" href="../../Css/img/Uiconstock-Socialmedia-Picasa.ico" />
+
+
+    <!-- Carousel -->
     <link rel="stylesheet" href="Css/css/carousel.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen" />
 
     <title>Picasa 2.0</title>
 
@@ -18,9 +22,6 @@
 
     <!-- Custom CSS -->
     <link href="Css/css/sb-admin.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="Css/css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="Css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
