@@ -157,13 +157,13 @@ searchElement.onkeyup = function(e) {
 function remplirVille() {
 
     var code = document.getElementById("search");
-    var codeString= code.value;
-    var CP = codeString.substring(0,5);
+    var codeString = code.value;
+    var CP = codeString.substring(0, 5);
     var InputVille = document.getElementById('ville');
-    var ville =codeString.substring(codeString.lastIndexOf(" "));
-    
-    InputVille.value= ville;
-    code.value= CP;
+    var ville = codeString.substring(codeString.lastIndexOf(" "));
+
+    InputVille.value = ville;
+    code.value = CP;
 }
 
 window.onload = afficherPays();
@@ -200,6 +200,60 @@ function afficherPays()
 
 
 }
+
+function surligne(champ, erreur)
+{
+   if(erreur)
+      champ.style.backgroundColor = "#F00";
+   else
+      champ.style.backgroundColor = "#0F0";
+}
+
+function verifText(champ)
+{
+    if (champ.value.length < 2 || champ.value.length > 25)
+    {
+        surligne(champ, true);
+        return false;
+    }
+    else
+    {
+        surligne(champ, false);
+        return true;
+    }
+
+}
+function verifMail(champ)
+{
+   var regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+   if(!regex.test(champ.value))
+   {
+      surligne(champ, true);
+      return false;
+   }
+   else
+   {
+      surligne(champ, false);
+      return true;
+   }
+}
+
+
+function verifForm(f)
+{
+   var textOk = verifText(f.pseudo);
+   var mailOk = verifMail(f.email);
+
+   if(textOk && mailOk){
+    return true;
+}
+   else
+   {
+      alert("Teh languette ton moment rempli bien formulaire la moukate la !");
+      return false;
+   }
+}
+
 
 document.getElementById("telephone").addEventListener("keyup", myFunction);
 

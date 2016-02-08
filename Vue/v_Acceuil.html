@@ -91,7 +91,7 @@
                         <h2 class="section-heading">S'inscrire </h2>
                         <hr class="light">
                         <p class="text-faded">Si tu n'as rien à faire viens!</p>
-                        <form class="form-horizontal" id="FormContact" method="post" action="#">
+                        <form class="form-horizontal" id="FormContact" method="post" onsubmit="return verifForm(this)" action="Controleur/c_Inscription.php">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Titre :</label>
                                 <div class="col-sm-10">
@@ -106,19 +106,32 @@
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Nom * :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" name="nom" class="form-control" placeholder="Nom" required>
+                                    <input type="text" name="nom" class="form-control" placeholder="Nom" onblur="verifText(this)" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label">Prénom * :</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="prenom" placeholder="Prénom" required>
+                                    <input type="text" class="form-control" name="prenom" placeholder="Prénom"  onblur="verifText(this)" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">Email * :</label>
+                                <label  class="col-sm-2 control-label">Pseudo * :</label>
                                 <div class="col-sm-10">
-                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                    <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" onblur="verifText(this)"  required/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label">FDP *:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" name="MDP" class="form-control" placeholder="Mot de passe" onblur="verifText(this)" required/>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Email  :</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" name="email" placeholder="Email" onblur="verifMail(this)" >
                                 </div>
                             </div>
                             <div class="form-group">
@@ -225,7 +238,7 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2 class="section-heading">Let's Get In Touch!</h2>
                         <hr class="primary">
-                        <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                        <p>Ready to start your next project with us? That's great! Give us a call or send fshocgoshmlfjzolishs an email and we will get back to you as soon as possible!</p>
                     </div>
                     <div class="col-lg-4 col-lg-offset-2 text-center">
                         <i class="fa fa-phone fa-3x wow bounceIn"></i>
