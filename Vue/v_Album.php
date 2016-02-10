@@ -1,41 +1,32 @@
-<form action="/JS/Modele/upload.php" method="post" enctype="multipart/form-data">
-    <input type="hidden" name ="MAX FILE SIZE" value="2000000">
-    <input id="file" type="file"  name="file[]"  accept="image/*" multiple>
-    <button type="submit" class="btn btn-primary btn-lg" name="btn_newDemande">Envoyer</button>
+<form id="FormEdit" class="form-inline" action="/JS/Modele/upload.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <input type="hidden" name ="MAX FILE SIZE" value="2000000">
+        <input id="file" type="file"  name="file[]"  accept="image/*" multiple>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg" name="btn_newDemande">Envoyer</button>
+    </div>
 
 </form>
 
 <!--<input type="button" value="uploader" onclick="uploader()">-->
 
 <div id="prev"></div>
-<progress id="progress"></progress>
+<div class="progress" style="width: 200px;">
+    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+        0%
+    </div>
+</div>
+
 
 <script>
-    (function() {
 
-        function createThumbnail(file) {
-
-            var reader = new FileReader();
-
-            reader.addEventListener('load', function() {
-
-                var imgElement = document.createElement('img');
-                imgElement.style.maxWidth = '150px';
-                imgElement.style.maxHeight = '150px';
-                imgElement.style.margin = '5px';
-                imgElement.src = this.result;
-                prev.appendChild(imgElement);
-
-            }, false);
-
-            console.log("reader : "+reader);
-//            console.log(reader.readAsDataURL(file));
-            reader.readAsDataURL(file);
-        }
+    $(document).ready(function(){
 
         var allowedTypes = ['png', 'jpg', 'jpeg', 'gif'],
             fileInput = document.querySelector('#file'),
-            prev = document.querySelector('#prev');
+            prev = document.querySelector('#prev'),
+            progress = document.querySelector('#progress');
 
         fileInput.addEventListener('change', function() {
 
@@ -56,41 +47,40 @@
 
             }
 
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', '/JS/Modele/upload.php'); // Rappelons qu'il est obligatoire d'utiliser la méthode POST quand on souhaite utiliser un FormData
+        }, false);
 
-            xhr.upload.addEventListener('progress', function(e) {
-                progress.value = e.loaded;
-                progress.max = e.total;
+        $('#FormEdit').on('submit',function(){
+            var submit = $.post( "/JS/Modele/upload.php")
+                .done(function() {
+
+                    alert( "Upload terminé !" );
+                })
+                .fail(function() {
+                    alert( "erreur lors de l'upload !" );
+                });
+        });
+
+        function createThumbnail(file) {
+
+            var reader = new FileReader();
+
+            reader.addEventListener('load', function() {
+
+                var imgElement = document.createElement('img');
+                imgElement.style.maxWidth = '150px';
+                imgElement.style.maxHeight = '150px';
+                imgElement.style.margin = '5px';
+                imgElement.src = this.result;
+                prev.appendChild(imgElement);
+
             }, false);
+            reader.readAsDataURL(file);
+        }
 
-            xhr.addEventListener('load', function() {
-                alert('Upload terminé !');
-            }, false);
-
-            xhr.send(formData);
-
-        }, false);
+    });
 
 
 
-    })();
 
-    function upload(){
-
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', '/JS/Modele/upload.php'); // Rappelons qu'il est obligatoire d'utiliser la méthode POST quand on souhaite utiliser un FormData
-
-        xhr.upload.addEventListener('progress', function(e) {
-            progress.value = e.loaded;
-            progress.max = e.total;
-        }, false);
-
-        xhr.addEventListener('load', function() {
-            alert('Upload terminé !');
-        }, false);
-
-        xhr.send(formData);
-    }
 
 </script>
