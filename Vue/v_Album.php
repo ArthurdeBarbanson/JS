@@ -6,7 +6,6 @@
     <div class="form-group">
         <button type="submit" class="btn btn-primary btn-lg" name="btn_newDemande">Envoyer</button>
     </div>
-
 </form>
 
 <!--<input type="button" value="uploader" onclick="uploader()">-->
@@ -23,7 +22,7 @@
 
     $(document).ready(function(){
 
-        var allowedTypes = ['png', 'jpg', 'jpeg', 'gif'],
+        var allowedTypes = ['png', 'jpg', 'jpeg', 'gif'], // type d'image autorisé
             fileInput = document.querySelector('#file'),
             prev = document.querySelector('#prev'),
             progress = document.querySelector('#progress');
@@ -52,7 +51,6 @@
         $('#FormEdit').on('submit',function(){
             var submit = $.post( "/JS/Modele/upload.php")
                 .done(function() {
-
                     alert( "Upload terminé !" );
                 })
                 .fail(function() {
@@ -78,9 +76,4 @@
         }
 
     });
-
-
-
-
-
 </script>
