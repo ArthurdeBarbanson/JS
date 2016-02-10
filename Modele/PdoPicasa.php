@@ -12,9 +12,7 @@ class PdoPicasa {
     private $monPdo;
     private static $connexion = null;
 
-//Principe du static 
-
-
+//Principe du static
 
     public function __construct() {
         $this->monPdo = new PDO($this->serveur . ';' . $this->bdd, $this->user, $this->mdp);
