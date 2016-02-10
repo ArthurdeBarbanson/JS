@@ -38,4 +38,16 @@ class PdoPicasa {
         $this->monPdo->query($insertAdr);
     }
 
+    public function ajouterimage($nom) {
+        $insertAdr = "INSERT INTO `photo`(`id`, `description`, `id_album`, `id_user`, `path`, `date_ajout`) VALUES ('','','','','".$nom."');";
+        $this->monPdo->query($insertAdr);
+    }
+
+    public function getImage() {
+        $req = "SELECT path FROM `photo`";
+        $res = $this->monPdo->query($req);
+        $liste = $res->fetchall();
+        return $liste;
+    }
+
 }
