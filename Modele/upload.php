@@ -1,5 +1,8 @@
 <?php //C'est $_FILES qui "transporte" nos fichiers
+
+// c'est le chemin ou sont uploder les images
 $chemin='/home/arthur/Documents/Cours/JavaScript/imagestest/';
+
 if(!empty($_FILES)){
     //on compte le nombre de fichiers re�u par le serveur
     $nb=count($_FILES['file']['name']);
@@ -35,9 +38,4 @@ if(!empty($_FILES)){
         }
     }
 }
-
-var_dump($_FILES);var_dump($copie);
-//var_dump($image);
-//var_dump($extension);
-//var_dump($_FILES['file']['tmp_name'][0]);
-//var_dump('../Modele/testupload/'.$image);
+header('Location: /JS/?uc=Album');
