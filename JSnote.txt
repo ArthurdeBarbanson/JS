@@ -1,0 +1,24 @@
+FICHIER Modele/Ajax/formulaireInscription.js
+
+	- function pour autocompletion ligne 36 a 154
+
+	- function remplirVille() apres autocompletion renseigne automatiquement la ville.
+
+	- function afficherPays() au chargment affive tout les pays.	
+
+	- function verifText() verifie si les champ son vide ,utiliser sur :
+		nom
+		prenom
+		pseudo
+		mdp
+	
+	- function verifForm() : Verifie le formulaire d'inscription
+
+	- function incremente() : a chaque fois qu'on tape 2 chiffre il y a un espace automatique qui se creer
+
+	
+
+	
+FICHIER Modele/Ajax/codeMenu.js
+
+	- Chargement des messages et des alerts (dans le menu en haut) au chargement de la page apres la connexion

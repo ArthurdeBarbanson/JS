@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7298ce3-5075-4942-8f7c-ad8d4d4d7f1f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js" afterPath="$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js" />
-    </list>
+    <list default="true" id="f7298ce3-5075-4942-8f7c-ad8d4d4d7f1f" name="Default" comment="" />
     <ignored path="JS.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,8 +25,8 @@
       <file leaf-file-name="formulaireInscription.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.85489315">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.25421822">
+              <caret line="137" column="5" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -326,8 +323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.85489315">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.25421822">
+          <caret line="137" column="5" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
