@@ -9,7 +9,7 @@ jQuery(function() {
         jQuery('#message').val('');
         jQuery('#message').focus();
         $.post('Controleur/chat.php', {'nom':nom, 'message': message }, function() {
-            afficheConversation;
+            afficheConversation();
         });
     });
 
