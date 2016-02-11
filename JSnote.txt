@@ -22,3 +22,16 @@ FICHIER Modele/Ajax/formulaireInscription.js
 FICHIER Modele/Ajax/codeMenu.js
 
 	- Chargement des messages et des alerts (dans le menu en haut) au chargement de la page apres la connexion
+
+
+FICHIER js/tchat.js
+
+   - Petit tchat en Jquerry utilise le fichier chat.php
+   - function afficheConversation() Permet de mettre à jour le contenu la zone id = #conversation
+   - jQuery('#envoyer').click(function() evenement qui une fois déclencher recupère le nom de l'utilisateur et le contenu de son messagepour l'envoyer à chat.php
+
+Fichier js/carousel.js
+
+   - fichier de config du carousel
+   - $JssorSlider$ permet d'utiliser la librairie du carousel on lui met en parametre l'ID de la div du carousel et les options de celui ci.
+   - fancybox() permet d'utiliser la bibliothèque pour afficher les popups des images de class .fancybox

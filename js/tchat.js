@@ -1,7 +1,10 @@
 jQuery(function() {
 
     afficheConversation();
+    function afficheConversation() {
+        jQuery('#conversation').load('ac.htm');
 
+    }
     jQuery('#envoyer').click(function() {
         var nom = jQuery('#nom').text();
         var message = jQuery('#message').val();
@@ -11,10 +14,7 @@ jQuery(function() {
         jQuery('#message').val('');
     });
 
-    function afficheConversation() {
-        jQuery('#conversation').load('ac.htm');
 
-    }
 
     setInterval(afficheConversation, 4000);
 });
