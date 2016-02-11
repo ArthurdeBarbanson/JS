@@ -35,3 +35,11 @@ Fichier js/carousel.js
    - fichier de config du carousel
    - $JssorSlider$ permet d'utiliser la librairie du carousel on lui met en parametre l'ID de la div du carousel et les options de celui ci.
    - fancybox() permet d'utiliser la bibliothèque pour afficher les popups des images de class .fancybox
+
+Fichier Modele/upload.php
+
+    - permet l'upload des images du coté server
+    - $chemin est le chemin du dossier dans lequelle les fichier sont uploadés
+
+Fichier Vue/v_Album.php
+    - contient le js de upload
