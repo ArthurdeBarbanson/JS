@@ -8,7 +8,7 @@
 </div>
 
 <fieldset class="wrapper">
-    <legend>Un chat en jQuery</legend>
+    <legend>Un <img src="Css/img/chat.jpg" height="50 px"> en jQuery</legend>
     <div id="conversation"></div><br />
 
     <form action="#" method="post">

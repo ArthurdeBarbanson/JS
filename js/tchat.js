@@ -5,12 +5,10 @@ jQuery(function() {
     jQuery('#envoyer').click(function() {
         var nom = jQuery('#nom').text();
         var message = jQuery('#message').val();
-
-        jQuery('#message').val('');
-        jQuery('#message').focus();
         $.post('Controleur/chat.php', {'nom':nom, 'message': message }, function() {
             afficheConversation();
         });
+        jQuery('#message').val('');
     });
 
     function afficheConversation() {
