@@ -211,6 +211,7 @@ function surligne(champ, erreur)
 
 function verifText(champ)
 {
+
     if (champ.value.length < 2 || champ.value.length > 25)
     {
         surligne(champ, true);
@@ -253,6 +254,50 @@ function verifForm(f)
       return false;
    }
 }
+
+
+function verifPseudo(champ)
+{
+    verifText(champ);
+    alert("ok");
+    var params = '?pseudo=' + champ;
+    var xhr = getXhr();
+
+    // On assigne une fonction qui, lorsque l'état de la requête change, va traiter le résultat
+    xhr.onreadystatechange = function()
+    {
+
+        // readyState 4 = requête terminée
+        if (xhr.readyState == 4)
+        {
+
+            // status 200 = page requêtée trouvée
+            if (xhr.status == 200) {
+
+                document.getElementById('Pseudo').innerHTML = xhr.responseText;
+                // xhr.responseText contient exactement ce que la page PHP renvoi
+                // Page non trouvée
+            }
+
+            else
+                ajaxBox_setText('Error...');
+        }
+    };
+
+    // Préparation et exécution de la requête
+    var url = 'Modele/Ajax/traitement/Pseudo.php'+ params;
+    xhr.open('GET', url, true);
+    xhr.send(null);
+
+
+}
+
+
+
+
+
+
+
 
 
 document.getElementById("telephone").addEventListener("keyup", myFunction);
