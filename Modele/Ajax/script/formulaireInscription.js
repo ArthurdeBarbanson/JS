@@ -40,11 +40,11 @@ function getXhr()
 
 var searchElement = document.getElementById('search'),
         results = document.getElementById('results'),
-        selectedResult = -1, // Permet de savoir quel rÃ©sultat est sÃ©lectionnÃ© : -1 signifie Â« aucune sÃ©lection Â»
-        previousRequest, // On stocke notre prÃ©cÃ©dente requÃªte dans cette variable
-        previousValue = searchElement.value; // On fait de mÃªme avec la prÃ©cÃ©dente valeur
+        selectedResult = -1, // Permet de savoir quel résultat est sélectionné : -1 signifie Â« aucune sélection Â»
+        previousRequest, // On stocke notre précédente requête dans cette variable
+        previousValue = searchElement.value; // On fait de même avec la précédente valeur
 
-function getResults(keywords) { // Effectue une requÃªte et rÃ©cupÃ¨re les rÃ©sultats
+function getResults(keywords) { // Effectue une requête et récupère les résultats
 
     var xhr = new XMLHttpRequest();
 
@@ -62,17 +62,17 @@ function getResults(keywords) { // Effectue une requÃªte et rÃ©cupÃ¨re les
 }
 
 
-function displayResults(response) { // Affiche les rÃ©sultats d'une requÃªte
+function displayResults(response) { // Affiche les résultats d'une requête
 
-    results.style.display = response.length ? 'block' : 'none'; // On cache le conteneur si on n'a pas de rÃ©sultats
-    if (response.length) { // On ne modifie les rÃ©sultats que si on en a obtenu
+    results.style.display = response.length ? 'block' : 'none'; // On cache le conteneur si on n'a pas de résultats
+    if (response.length) { // On ne modifie les résultats que si on en a obtenu
         response = response.split('|');
         var responseLen = response.length;
-        results.innerHTML = ''; // On vide les rÃ©sultats
+        results.innerHTML = ''; // On vide les résultats
         for (var i = 0, div; i < responseLen; i++) {
 
 
-            Lienvide = document.createElement('div');                 //crÃ©er le lien pour avoir le droight
+            Lienvide = document.createElement('div');                 //créer le lien pour avoir le droight
 
 
             var onclickA = document.createAttribute("class");
@@ -89,13 +89,13 @@ function displayResults(response) { // Affiche les rÃ©sultats d'une requÃªte
     }
 }
 
-function chooseResult(result) { // Choisit un des rÃ©sultats d'une requÃªte et gÃ¨re tout ce qui y est attachÃ©
+function chooseResult(result) { // Choisit un des résultats d'une requête et gère tout ce qui y est attaché
 
-    searchElement.value = previousValue = result.innerHTML; // On change le contenu du champ de recherche et on enregistre en tant que prÃ©cÃ©dente valeur
-    results.style.display = 'none'; // On cache les rÃ©sultats
+    searchElement.value = previousValue = result.innerHTML; // On change le contenu du champ de recherche et on enregistre en tant que précédente valeur
+    results.style.display = 'none'; // On cache les résultats
     result.className = ''; // On supprime l'effet de focus
-    selectedResult = -1; // On remet la sÃ©lection Ã  zÃ©ro
-    searchElement.focus(); // Si le rÃ©sultat a Ã©tÃ© choisi par le biais d'un clic, alors le focus est perdu, donc on le rÃ©attribue
+    selectedResult = -1; // On remet la sélection à  zéro
+    searchElement.focus(); // Si le résultat a été choisi par le biais d'un clic, alors le focus est perdu, donc on le réattribue
 
 }
 
@@ -105,25 +105,25 @@ function chooseResult(result) { // Choisit un des rÃ©sultats d'une requÃªte 
 searchElement.onkeyup = function(e) {
     node = document.getElementById("Visib");
     node.style.visibility = "visible";
-    e = e || window.event; // On n'oublie pas la compatibilitÃ© pour IE
+    e = e || window.event; // On n'oublie pas la compatibilité pour IE
 
     var divs = results.getElementsByTagName('div');
 
-    if (e.keyCode == 38 && selectedResult > -1) { // Si la touche pressÃ©e est la flÃ¨che Â« haut Â»
+    if (e.keyCode == 38 && selectedResult > -1) { // Si la touche pressée est la flèche « haut »
 
         divs[selectedResult--].className = '';
 
-        if (selectedResult > -1) { // Cette condition Ã©vite une modification de childNodes[-1], qui n'existe pas, bien entendu
+        if (selectedResult > -1) { // Cette condition évite une modification de childNodes[-1], qui n'existe pas, bien entendu
             divs[selectedResult].className = 'result_focus';
         }
 
     }
 
-    else if (e.keyCode == 40 && selectedResult < divs.length - 1) { // Si la touche pressÃ©e est la flÃ¨che Â« bas Â»
+    else if (e.keyCode == 40 && selectedResult < divs.length - 1) { // Si la touche pressée est la flèche « bas »
 
-        results.style.display = 'block'; // On affiche les rÃ©sultats
+        results.style.display = 'block'; // On affiche les résultats
 
-        if (selectedResult > -1) { // Cette condition Ã©vite une modification de childNodes[-1], qui n'existe pas, bien entendu
+        if (selectedResult > -1) { // Cette condition évite une modification de childNodes[-1], qui n'existe pas, bien entendu
             divs[selectedResult].className = '';
         }
 
@@ -131,23 +131,23 @@ searchElement.onkeyup = function(e) {
 
     }
 
-    else if (e.keyCode == 13 && selectedResult > -1) { // Si la touche pressÃ©e est Â« EntrÃ©e Â»
+    else if (e.keyCode == 13 && selectedResult > -1) { // Si la touche pressée est « Entrée »
 
         chooseResult(divs[selectedResult]);
 
     }
 
-    else if (searchElement.value != previousValue) { // Si le contenu du champ de recherche a changÃ©
+    else if (searchElement.value != previousValue) { // Si le contenu du champ de recherche a changé
 
         previousValue = searchElement.value;
 
         if (previousRequest && previousRequest.readyState < 4) {
-            previousRequest.abort(); // Si on a toujours une requÃªte en cours, on l'arrÃªte
+            previousRequest.abort(); // Si on a toujours une requête en cours, on l'arrête
         }
 
-        previousRequest = getResults(previousValue); // On stocke la nouvelle requÃªte
+        previousRequest = getResults(previousValue); // On stocke la nouvelle requête
 
-        selectedResult = -1; // On remet la sÃ©lection Ã  zÃ©ro Ã  chaque caractÃ¨re Ã©crit
+        selectedResult = -1; // On remet la sélection à  zéro à  chaque caractère écrit
 
     }
 
