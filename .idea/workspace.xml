@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7298ce3-5075-4942-8f7c-ad8d4d4d7f1f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Modele/Ajax/traitement/Pseudo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js" afterPath="$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/v_Acceuil.html" afterPath="$PROJECT_DIR$/Vue/v_Acceuil.html" />
     </list>
     <ignored path="JS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="formulaireInscription.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="formulaireInscription.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.85489315">
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codeMenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modele/Ajax/script/codeMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="261" column="16" selection-start-line="261" selection-start-column="16" selection-end-line="261" selection-end-column="16" />
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -49,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v_Acceuil.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="v_Acceuil.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vue/v_Acceuil.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43337196">
-              <caret line="118" column="79" selection-start-line="118" selection-start-column="79" selection-end-line="118" selection-end-column="79" />
+            <state vertical-scroll-proportion="-15.692307">
+              <caret line="120" column="128" selection-start-line="120" selection-start-column="128" selection-end-line="120" selection-end-column="128" />
               <folding />
             </state>
           </provider>
@@ -68,8 +78,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Modele/Ajax/traitement/Pseudo.php" />
-        <option value="$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js" />
         <option value="$PROJECT_DIR$/Vue/v_Acceuil.html" />
+        <option value="$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js" />
       </list>
     </option>
   </component>
@@ -245,7 +255,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -282,18 +292,8 @@
         <state vertical-scroll-proportion="-9.153846">
           <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <marker date="1455200096191" expanded="true" signature="71:79" placeholder="SELECT `Id_S... societe" />
-            <marker date="1455200096191" expanded="true" signature="71:98" placeholder="SELECT `pseu... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="261" column="16" selection-start-line="261" selection-start-column="16" selection-end-line="261" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1455200806091" expanded="true" signature="71:79" placeholder="SELECT `Id_S... societe" />
+            <marker date="1455200806091" expanded="true" signature="71:98" placeholder="SELECT `pseu... user" />
           </folding>
         </state>
       </provider>
@@ -308,9 +308,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/v_Acceuil.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43337196">
-          <caret line="118" column="79" selection-start-line="118" selection-start-column="79" selection-end-line="118" selection-end-column="79" />
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="120" column="128" selection-start-line="120" selection-start-column="128" selection-end-line="120" selection-end-column="128" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modele/Ajax/script/codeMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modele/Ajax/script/formulaireInscription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.85489315">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

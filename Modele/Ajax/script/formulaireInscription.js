@@ -259,7 +259,7 @@ function verifForm(f)
 function verifPseudo(champ)
 {
     verifText(champ);
-    alert("ok");
+
     var params = '?pseudo=' + champ;
     var xhr = getXhr();
 
@@ -300,9 +300,9 @@ function verifPseudo(champ)
 
 
 
-document.getElementById("telephone").addEventListener("keyup", myFunction);
+document.getElementById("telephone").addEventListener("keyup", incremente);
 
-function myFunction() {
+function incremente() {
     var x = document.getElementById("telephone");
     if (x.value.length == 2) {
         x.value = x.value + ' ';
@@ -317,9 +317,9 @@ function myFunction() {
         x.value = x.value + ' ';
     }
 }
-document.getElementById("Mobile").addEventListener("keyup", myFunction2);
+document.getElementById("Mobile").addEventListener("keyup", incremente2);
 
-function myFunction2() {
+function incremente2() {
     var x = document.getElementById("Mobile");
     if (x.value.length == 2) {
         x.value = x.value + ' ';
